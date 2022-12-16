@@ -1,0 +1,287 @@
+
+          ---------------------------
+          STATIC VERIFICATION RESULTS
+          ---------------------------
+
+	
+	 ----------------------------------
+	 NUMBER OF FAILURES/WARNINGS/ERRORS
+	 ----------------------------------
+	 # of Failures : 1
+         # of Warnings : 1
+	 # of Errors : 0
+
+          -----------------------------------
+          RESULTS FOR APPCLIENT-RELATED TESTS
+          -----------------------------------
+	
+	 -----------
+	 WARNINGS :
+	 -----------
+	
+	 Test Name : tests.ClassContainsNativeMethod
+	 Test Assertion : Application classes contain native methods.
+	 Test Description : For [ ij ]
+Supplied below is the list of method names (in the format <package.classname>.<methodName>) that are defined as native methods and used by the application:
+
+	sun.misc.Unsafe.getByteVolatile
+
+	sun.misc.Unsafe.getLongVolatile
+
+	sun.reflect.ConstantPool.getLongAt0
+
+	sun.reflect.ConstantPool.getFieldAt0
+
+	sun.reflect.ConstantPool.getFloatAt0
+
+	sun.misc.Unsafe.putFloatVolatile
+
+	sun.reflect.ConstantPool.getDoubleAt0
+
+	sun.misc.Unsafe.putChar
+
+	sun.misc.Unsafe.getFloatVolatile
+
+	sun.misc.Unsafe.getObject
+
+	sun.misc.Unsafe.getBooleanVolatile
+
+	sun.misc.Unsafe.addressSize
+
+	sun.misc.Unsafe.putShort
+
+	sun.misc.Unsafe.putBoolean
+
+	sun.misc.Unsafe.compareAndSwapObject
+
+	sun.misc.Unsafe.putByte
+
+	sun.misc.Unsafe.throwException
+
+	sun.misc.Unsafe.putOrderedLong
+
+	sun.misc.Unsafe.putLongVolatile
+
+	sun.misc.Unsafe.putDoubleVolatile
+
+	sun.misc.Unsafe.tryMonitorEnter
+
+	sun.reflect.ConstantPool.getIntAt0
+
+	sun.misc.Unsafe.unpark
+
+	sun.misc.Unsafe.putOrderedInt
+
+	sun.reflect.ConstantPool.getStringAt0
+
+	sun.misc.Unsafe.getInt
+
+	sun.misc.Unsafe.reallocateMemory
+
+	sun.misc.Unsafe.park
+
+	sun.misc.Unsafe.ensureClassInitialized
+
+	sun.misc.Unsafe.putIntVolatile
+
+	sun.misc.Unsafe.registerNatives
+
+	sun.misc.Unsafe.getDoubleVolatile
+
+	sun.misc.Unsafe.putLong
+
+	sun.reflect.ConstantPool.getUTF8At0
+
+	sun.reflect.ConstantPool.getFieldAtIfLoaded0
+
+	sun.reflect.ConstantPool.getClassAt0
+
+	sun.misc.Unsafe.getChar
+
+	sun.misc.Unsafe.freeMemory
+
+	sun.misc.Unsafe.getDouble
+
+	sun.misc.Unsafe.compareAndSwapInt
+
+	sun.misc.Unsafe.getAddress
+
+	sun.misc.Unsafe.getBoolean
+
+	sun.misc.Unsafe.copyMemory
+
+	sun.misc.Unsafe.putObject
+
+	sun.misc.Unsafe.monitorEnter
+
+	sun.reflect.ConstantPool.getMemberRefInfoAt0
+
+	sun.misc.Unsafe.arrayIndexScale
+
+	sun.misc.Unsafe.getObjectVolatile
+
+	sun.misc.Unsafe.allocateMemory
+
+	sun.misc.Unsafe.putBooleanVolatile
+
+	sun.misc.Unsafe.getShort
+
+	sun.misc.Unsafe.getLong
+
+	sun.misc.Unsafe.putOrderedObject
+
+	sun.misc.Unsafe.getLoadAverage
+
+	sun.misc.Unsafe.objectFieldOffset
+
+	sun.misc.Unsafe.putInt
+
+	sun.misc.Unsafe.compareAndSwapLong
+
+	sun.misc.Unsafe.arrayBaseOffset
+
+	sun.misc.Unsafe.putByteVolatile
+
+	sun.misc.Unsafe.getShortVolatile
+
+	sun.reflect.ConstantPool.getMethodAt0
+
+	sun.misc.Unsafe.getFloat
+
+	sun.misc.Unsafe.putDouble
+
+	sun.misc.Unsafe.putFloat
+
+	sun.misc.Unsafe.staticFieldBase
+
+	sun.reflect.ConstantPool.getClassAtIfLoaded0
+
+	sun.misc.Unsafe.getCharVolatile
+
+	sun.reflect.Reflection.getCallerClass
+
+	sun.misc.Unsafe.setMemory
+
+	sun.misc.Unsafe.staticFieldOffset
+
+	sun.misc.Unsafe.allocateInstance
+
+	sun.reflect.Reflection.getClassAccessFlags
+
+	sun.misc.Unsafe.putShortVolatile
+
+	sun.misc.Unsafe.getByte
+
+	sun.reflect.ConstantPool.getMethodAtIfLoaded0
+
+	sun.reflect.ConstantPool.getSize0
+
+	sun.misc.Unsafe.getIntVolatile
+
+	sun.misc.Unsafe.monitorExit
+
+	sun.misc.Unsafe.putAddress
+
+	sun.misc.Unsafe.putObjectVolatile
+
+	sun.misc.Unsafe.pageSize
+
+	sun.misc.Unsafe.putCharVolatile
+
+	sun.misc.Unsafe.defineClass
+Please make sure that you implement them on all operating systems.
+
+	 ---------------
+	 PASSED TESTS :
+	 ---------------
+	
+	 Test Name : tests.appclient.AppClientCallbackHandler
+	 Test Assertion : The application client has a loadable JAAS CallbackHandler. Please refer to JavaEE 5.0 Platform Specification Section #3.4.4, #9.7  for further information.
+	 Test Description : For [ ij ]
+Application client callback handler is not specified.
+
+	 Test Name : tests.IconImageTypeTest
+	 Test Assertion : The icon type contains small-icon and large-icon elements that specify the file names for small and large GIF, JPEG, or PNG icon images used to represent the parent element in a GUI tool. GIF, JPEG are supported till J2EE 1.4, PNG type has been introduced in JAVA EE 5. The specified files should be packaged inside the bundle containing this deployment descriptor. Please refer to J2EE 1.4 Platform Specification section #8.6 for further information.
+	 Test Description : For [ ij ]
+No errors were detected.
+
+	 Test Name : tests.appclient.AppClientMainClass
+	 Test Assertion : Application clients start execution at the main method of the class specified in the Main-Class attribute in the manifest file of the application clients JAR file. It must be specified in the MANIFEST file. Please refer to JavaEE 5 Platform Specification section #9.5 for further information.
+	 Test Description : For [ ij ]
+main-class entry is defined properly.
+
+	 Test Name : tests.appclient.PUMatchingEMandEMFRefTest
+	 Test Assertion : For every entity manager referenced in the application, there must be a matching persistence unit defined using META-INF/persistence.xml file. Please refer to EJB 3.0 Persistence API Specification section #6.2 for further information.
+	 Test Description : Persistence units that are visible to this component are [  ].
+
+	 Test Name : tests.appclient.PUTransactionType
+	 Test Assertion : A persistence unit with JTA transaction type is not supported in application client. Please refer to EJB 3.0 Persistence API Specification Section #5.5 for further information.
+	 Test Description : For [ ij ]
+There were no errors reported.
+
+	 ---------------------
+	 NOTAPPLICABLE TESTS :
+	 ---------------------
+	
+	 Test Name : tests.appclient.JarContainsXML
+	 Test Assertion : Application client JAR file contains the XML-based deployment descriptor.
+	 Test Description : For [ ij ]
+Test is not applicable.
+
+	 Test Name : tests.appclient.elements.AppClientEjbLinkElement
+	 Test Assertion : EJB References in application client are resolved. Please refer to Java EE 5.0 Platform Specification Section #5.5.1 for further information.
+	 Test Description : For [ ij ]
+There are no references to enterprise beans within this application client [ C:\DOCUME~1\santhosh\LOCALS~1\Temp\exploded20070106124646\ij ].
+
+	 Test Name : tests.appclient.elements.AppClientResourceType
+	 Test Assertion : The application client res-type element specifies the Java class type of the data source. Please refer to JavaEE 5.0 Platform Specification Section #5.6.1.4 for further information.
+	 Test Description : For [ ij ]
+There are no res-type elements within the application client [ C:\DOCUME~1\santhosh\LOCALS~1\Temp\exploded20070106124646\ij ].
+
+	 Test Name : tests.appclient.elements.AppClientEjbLinkOnlyOne
+	 Test Assertion : EJB References in application client is resolved to only one EJB. Please refer to Java EE 5.0 Platform Specification Section #5.5.1 for further information.
+	 Test Description : For [ ij ]
+There are no references to enterprise beans within this application client [ C:\DOCUME~1\santhosh\LOCALS~1\Temp\exploded20070106124646\ij ].
+
+	 Test Name : tests.appclient.AppClientEnvEntryValue
+	 Test Assertion : Application client environment entry value must be a string that is valid for the constructor of the specified type that takes a single String parameter. Please refer to J2EE 5.0 Platform Specification Section #5.4.1.3  for further information.
+	 Test Description : For [ ij ]
+There are no environment entry elements defined within this application client [ C:\DOCUME~1\santhosh\LOCALS~1\Temp\exploded20070106124646\ij ].
+
+	 Test Name : tests.appclient.AppClientEnvEntryValueType
+	 Test Assertion : Application client environment entry value type. Please refer to JavaEE 5 Platform Specification Section #5.4 for further information.
+	 Test Description : For [ ij ]
+There are no environment entry elements defined within this application client [ C:\DOCUME~1\santhosh\LOCALS~1\Temp\exploded20070106124646\ij ].
+
+	 Test Name : tests.appclient.PersistenceUnitCount
+	 Test Assertion : persistence,xml should have atleast one peristence unit. Please refer to EJB 3.0 Persistence API Specification section #6.2.1 for further information.
+	 Test Description : For [ ij ]
+Test is not applicable.
+
+	 --------------
+	 FAILED TESTS : 
+	 --------------
+	
+	 Test Name : tests.appclient.AppClientArchiveClassesLoadable
+	 Test Assertion : All classes in this AppClient Archive are loadable. Please refer to JavaEE 5.0 Specification Section #8.3.1 for further information.
+	 Test Description : For [ ij ]
+
+Failed to find following classes:
+[
+	com.apple.eawt.ApplicationListener,
+	com.apple.eawt.ApplicationEvent,
+	com.apple.eawt.Application
+]
+
+referenced in the following call stack :
+
+	at MacAdapter
+
+
+Please either bundle the above mentioned classes in the application or use optional packaging support for them.
+
+        
+          ----------------------------------
+          END OF STATIC VERIFICATION RESULTS
+          ----------------------------------
+    
